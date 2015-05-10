@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight Order</title>
+	<style type="text/css">
+		body {
+			font-family: Verdana;
+		}
+		div.outerDiv {
+			width: 600px;
+			height: 410px;
+			background-color: pink;
+			border: 1px solid black;
+		}
+		header {
+			text-align: center;
+			font-style: italic;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		div.innerDivOne {
+			width: 46%;
+			height: 82%;
+			float: left;
+			margin-left: 3%;
+			margin-right: 1%;
+		}
+		div.innerDivTwo {
+			width: 46%;
+			height: 82%;
+			float: right;
+			margin-left: 1%;
+			margin-right: 3%;
+		}
+		.italic {
+			font-style: italic;
+			font-size: 15px;
+		}
+		select {
+			width: 100%;
+			height: 36px;
+			margin-top: 5px;
+			font-size: 20px;
+		}
+		.directs {
+			font-size: 14px;
+			font-style: italic;
+			margin-left: 5px;
+			vertical-align: 1px;
+		}
+		input[type="checkbox"] {
+			margin-top: 10px;
+		}
+		input[type="time"] {
+			width: 100%;
+			height: 30px;
+			font-size: 20px;
+		}
+		input[type="date"] {
+			width: 100%;
+			height: 30px;
+			margin-top: 5px;
+			font-size: 20px;
+		}
+		.firstDiv {
+			width: 100%;
+			height: 27%;
+		}
+		.secondDiv {
+			width: 100%;
+			height: 19%;
+		}
+		.fourthDiv {
+			width: 100%;
+			height: 35%;
+		}
+		.forTimeOne {
+			width: 48%;
+			float: left;
+			margin-top: 5px;
+		}
+		.forTimeTwo {
+			width: 48%;
+			float: right;
+			margin-top: 5px;
+		}
+		.numberOne {
+			width: 31%;
+			float: left;
+			padding-right: 3.5%;
+		}
+		.numberTwo {
+			width: 31%;
+			display: inline-block;
+		}
+		.numberThree {
+			width: 31%;
+			float: right;
+			padding-left: 3.5%;
+		}
+		input[type="number"] {
+			width: 100%;
+			height: 30px;
+			margin-top: 5px;
+			font-size: 20px;
+		}
+		button {
+			width: 100%;
+			margin-top: 7px;
+			height: 35px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="outerDiv">
+		<header>FLIGHT ORDER</header>
+		<div class="innerDivOne">
+			<div class="firstDiv">
+				<span class="italic">From</span><br/>
+				<select>
+					<option value="default">enter a city</option>
+					<option value="rome">Rome (Fiumicino)</option>
+					<option value="london">London (Heathrow)</option>
+					<option value="paris">Paris (Charles De Gaulle)</option>
+					<option value="newYork">New York (John F. Kennedy)</option>
+					<option value="losAngeles">Los Angeles (LAX)</option>
+				</select>
+			</div>
+			<div class="secondDiv">
+				<span class="italic">Departure Date</span><br/>
+				<input type="date">
+			</div >
+			<div class="secondDiv">
+				<span class="italic">Return Date</span><br/>
+				<input type="date">
+			</div>
+			<div class="fourthDiv">
+				<div class="numberOne">
+					<span class="italic">12+</span><br/>
+					<input type="number" min="0" max="10" step="1" value="0">
+				</div>
+				<div class="numberTwo">
+					<span class="italic">2-12</span><br/>
+					<input type="number" min="0" max="10" step="1" value="0">
+				</div>
+				<div class="numberThree">
+					<span class="italic">0-2</span><br/>
+					<input type="number" min="0" max="10" step="1" value="0">
+				</div>
+			</div>
+		</div>
+		<div class="innerDivTwo">
+			<div class="firstDiv">
+				<span class="italic">To</span>
+				<select>
+					<option value="default">enter a city</option>
+					<option value="rome">Rome (Fiumicino)</option>
+					<option value="london">London (Heathrow)</option>
+					<option value="paris">Paris (Charles De Gaulle)</option>
+					<option value="newYork">New York (John F. Kennedy)</option>
+					<option value="losAngeles">Los Angeles (LAX)</option>
+				</select>
+				<input type="checkbox"><span class="directs">Prefer directs</span>
+			</div>
+			<div class="secondDiv">
+				<span class="italic">Time Interval</span><br/>
+				<div class="forTimeOne">
+					<input type="time">
+				</div>
+				<div class="forTimeTwo">
+					<input type="time">
+				</div>
+			</div>
+			<div class="secondDiv">
+				<span class="italic">Time Interval</span><br/>
+				<div class="forTimeOne">
+					<input type="time">
+				</div>
+				<div class="forTimeTwo">
+					<input type="time">
+				</div>
+			</div>
+			<div class="fourthDiv">
+				<span class="italic">Choose class</span>
+				<select>
+					<option value="economy">Economy</option>
+					<option value="business">Business</option>
+					<option value="first">First</option>
+				</select>
+				<button>Search</button>
+			</div >
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laptop Choice</title>
+	<style type="text/css">
+		body {
+			font-family: Tahoma;
+			color: rgb(49, 72, 96);
+		}
+		div.primeDiv {
+			width: 890px;
+			height: 550px;
+			border: 1px solid lightgrey;
+		}
+		header {
+			font-size: 26px;
+			font-weight: bold;
+			margin: 15px;
+		}
+		#img1 {
+			width: 200px;
+    		height: 130px;
+    		background: url(laptops.png) 0 0;
+		}
+		#img2 {
+			width: 200px;
+    		height: 130px;
+    		background: url(laptops.png) -200px 0;
+		}
+		#img3 {
+			width: 200px;
+    		height: 130px;
+    		background: url(laptops.png) -400px 0;
+		}
+		#img4 {
+			width: 200px;
+    		height: 130px;
+    		background: url(laptops.png) -600px 0;
+		}
+		#img5 {
+			width: 200px;
+    		height: 130px;
+    		background: url(laptops.png) -800px 0;
+		}
+		#img6 {
+			width: 200px;
+    		height: 130px;
+    		background: url(laptops.png) -1000px 0;
+		}
+		div.left {
+			float: left;
+			height: 100%;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		div.right {
+			float: right;
+			height: 100%;
+			background-color: rgb(245, 250, 255);
+		}
+		div.laptop1 {
+			float: left;
+			text-align: center;
+			border: 1px solid lightblue;
+			margin: 10px;
+			border-radius: 5px;
+		}
+		div.laptop2 {
+			display: inline-block;
+			text-align: center;
+			border: 1px solid lightblue;
+			margin: 10px;
+			border-radius: 5px;
+		}
+		div.laptop3 {
+			float: right;
+			text-align: center;
+			border: 1px solid lightblue;
+			margin: 10px;
+			border-radius: 5px;
+		}
+		div.laptop4 {
+			float: left;
+			text-align: center;
+			border: 1px solid lightblue;
+			margin: 10px;
+			border-radius: 5px;
+		}
+		div.laptop5 {
+			display: inline-block;
+			text-align: center;
+			border: 1px solid lightblue;
+			margin: 10px;
+			border-radius: 5px;
+		}
+		div.laptop6 {
+			float: right;
+			text-align: center;
+			border: 1px solid lightblue;
+			margin: 10px;
+			border-radius: 5px;
+		}
+		.big {
+			font-size: 16px;
+		}
+		.small {
+			font-size: 12px;
+		}
+		div.price {
+			width: 120px;
+			height: 30px;
+			float: right;
+			background-color: rgb(49, 72, 96);
+			color: white;
+			padding-top: 10px;
+			border-radius: 10px 0 0 0;
+			margin-top: 10px;
+		}
+		.center {
+			text-align: center;
+			font-size: 15px;
+			font-family: Verdana;
+			margin-top: 20px;
+			margin-bottom: 7px;
+		}
+		.floatLeft {
+			float: left;
+			font-size: 11px;
+			font-family: Verdana;
+			margin-left: 5px;
+		}
+		.floatRight {
+			float: right;
+			font-size: 11px;
+			font-family: Verdana;
+			margin-right: 5px;
+		}
+		input {
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="primeDiv">
+		<div class="left">
+			<header>Apple's Laptops (6)</header>
+			<div class="images">
+				<div class="laptop1">
+					<span class="big">Apple MacBook Air</span><br/>
+					<span class="small">11.6 inch / 1.3GHz Haswell</span>
+					<div id="img1"></div>
+					<div class="price">$1,729.00</div>
+				</div>
+				<div class="laptop2">
+					<span class="big">Apple MacBook Air</span><br/>
+					<span class="small">11.6 inch / 1.4GHz Haswell</span>
+					<div id="img2"></div>
+					<div class="price">$1,825.00</div>
+				</div>
+				<div class="laptop3">
+					<span class="big">Apple MacBook Air</span><br/>
+					<span class="small">13.3 inch / 1.3GHz Haswell</span>
+					<div id="img3"></div>
+					<div class="price">$1,919.00</div>
+				</div>
+			</div>
+			<div class="images">
+				<div class="laptop4">
+					<span class="big">Apple MacBook Air</span><br/>
+					<span class="small">13.3 inch / 1.4GHz Haswell</span>
+					<div id="img4"></div>
+					<div class="price">$1,999.00</div>
+				</div>
+				<div class="laptop5">
+					<span class="big">Apple MacBook Air</span><br/>
+					<span class="small">11.6 inch / 1.4GHz Haswell SSD</span>
+					<div id="img5"></div>
+					<div class="price">$2,119.00</div>
+				</div>
+				<div class="laptop6">
+					<span class="big">Apple MacBook Air</span><br/>
+					<span class="small">13.3 inch / 2.5GHz Ivy Bridge</span>
+					<div id="img6"></div>
+					<div class="price">$2,529.00</div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="center">Price</div>
+			<div class="floatLeft">1700</div><div class="floatRight">2600</div>
+			<div><input type="range" name="points" min="1700" max="2600" step="100"></div>
+			<div class="center">RAM</div>
+			<div class="floatLeft">2048</div><div class="floatRight">4096</div>
+			<div><input type="range" name="points" min="2048" max="4096" step="1024"></div>
+			<div class="center">Disc</div>
+			<div class="floatLeft">100GB</div><div class="floatRight">200GB</div>
+			<div><input type="range" name="points" min="100" max="200" step="20"></div>
+			<div class="center">Display</div>
+			<div class="floatLeft">11.6</div><div class="floatRight">18.4</div>
+			<div><input type="range" name="points" min="11.6" max="18.4" step="1.7"></div>
+			<div class="center">Weight</div>
+			<div class="floatLeft">1</div><div class="floatRight">6</div>
+			<div><input type="range" name="points" min="1" max="6" step="1"></div>
+			<div class="center">Warranty</div>
+			<div class="floatLeft">12 months</div><div class="floatRight">60 months</div>
+			<div><input type="range" name="points" min="12" max="60" step="12"></div>
+		</div>
+	</div>
+</body>
+</html>

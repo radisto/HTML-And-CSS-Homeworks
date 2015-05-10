@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fakebook Register Form</title>
+	<style type="text/css">
+		@font-face {
+			font-family: Facebook;
+			src: url(facebook.otf);
+		}
+		div.primeDiv {
+			width: 900px;
+			height: 620px;
+			background-color: rgb(65, 95, 156);
+		}
+		div.botDivOne {
+			height: 55%;
+			width: 32%;
+			margin-left: 2%;
+			margin-right: 4%;
+			float: left;
+		}
+		div.botDivTwo {
+			height: 55%;
+			width: 60%;
+			margin-right: 2%;
+			float: right;
+		}
+		body {
+			font-family: Verdana;
+		}
+		header {
+			font-family: Facebook;
+			text-align: center;
+			color: white;
+		}
+		input {
+			height: 25px;
+			border-radius: 5px;
+		}
+		select {
+			height: 30px;
+			border-radius: 5px;
+			width: 32%;
+			margin-right: 1%;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		.fake {
+			font-size: 120px;
+		}
+		.bigR {
+			font-size: 40px;
+			vertical-align: -15px;
+		}
+		h1 {
+			font-size: 28px;
+			text-align: center;
+			color: white;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		h2 {
+			font-size: 16px;
+			text-align: center;
+			color: white;
+			margin-bottom: 40px;
+		}
+		.firstField {
+			border-radius: 10px;
+			height: 250px;
+		}
+		.evenInput {
+			width: 47%;
+			margin-right: 2%;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		.oddInput {
+			width: 47%;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		legend {
+			color: white;
+			font-size: 14px;
+			text-align: center;
+		}
+		.white {
+			display: block;
+			color: white;
+			font-size: 12px;
+			margin: 3px 0;
+		}
+		input[type="date"] {
+			width: 70%;
+			margin: 4px 0;
+		}
+		.radio {
+			color: white;
+			font-size: 12px;
+		}
+		input[type="radio"] {
+			vertical-align: -7px;
+		}
+		label {
+			margin-right: 10px;
+		}
+		.botButton {
+			margin-top: 22px;
+			width: 100%;
+			height: 35px;
+			background-color: rgb(223, 223, 223);
+			text-align: center;
+			color: rgb(65, 95, 156);
+			border-radius: 7px;
+			padding-top: 15px;
+			font-weight: bold;
+		}
+		.botDivTwo .botButton {
+			font-size: 20px;
+		}
+		.wide {
+			width: 16%;
+			margin-right: 1%;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		.wider {
+			width: 31%;
+			margin-right: 1%;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		textarea {
+			width: 97%;
+			height: 70px;
+			border-radius: 5px;
+			color: grey;
+		}
+	</style>
+</head>
+<body>
+	<div class="primeDiv">
+		<header><span class="fake">fakebook</span><span class="bigR">&reg;</span></header>
+		<h1>Registration</h1>
+		<h2>It is safe and it will always be!</h2>
+		<div class="botDivOne">
+		<form>
+			<fieldset class="firstField">
+				<legend>None-Important Information</legend>
+				<input class="evenInput" type="text" placeholder="First Name"><input class="oddInput" type="text" placeholder="Last Name">
+				<input class="evenInput" type="email" placeholder="Your Email"><input class="oddInput" type="text" placeholder="Phone Number">
+				<input class="evenInput" type="password" placeholder="Your Password"><input class="oddInput" type="url" placeholder="Website">
+				<span class="white">Birthday</span>
+				<input type="date">
+				<div class="radio">
+					<label><input type="radio" name="gender"/>Female</label>
+					<label><input type="radio" name="gender"/>Male</label>
+					<label><input type="radio" name="gender" checked/>Other</label>
+				</div>
+			</fieldset>
+			<div class="botButton">
+				Clear Form
+			</div>
+		</form>
+		</div>
+		<div class="botDivTwo">
+			<form>
+			<fieldset class="firstField">
+				<legend>Important Information *required</legend>
+				<select><option>Country</option><option>Bulgaria</option><option>USA</option></select><input class="wider" type="text" placeholder="Village"><input class="wider" type="text" placeholder="District">
+				<input class="wider" type="text" placeholder="Street"><input class="wide" type="number" placeholder="Nr"><input class="wide" type="number" placeholder="Floor"><input class="wide" type="number" placeholder="Ap Nr">
+				<span class="white">Door Color</span>
+				<input class="wider" type="color" value="#FF86C4"><input class="wider" type="number" placeholder="Water Meter Nr"><select><option>Aunt Panties' Size</option><option>Big</option><option>Huge</option></select>
+				<span class="white">More Personal Information</span>
+				<textarea>Give Us More Information!!!</textarea>
+			</fieldset>
+			<div class="botButton">
+				Register
+			</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

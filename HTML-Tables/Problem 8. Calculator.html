@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<style type="text/css">
+		body {
+			background-color: lightgrey;
+		}
+		.wide {
+			width: 31px;
+		}
+		.wider {
+			width: 70px;
+		}
+		tr:nth-child(1) td {
+			font-size: 26px;
+			font-family: Consolas;
+			font-weight: bold;
+			text-align: center;
+		}
+		input {
+			font-family: Calibri;
+			margin: 2px;
+			font-size: 18px;
+		}
+		input[type="text"] {
+			font-size: 30px;
+			text-align: right;
+		}
+	</style>
+	<script type="text/javascript">
+		function result() {
+			calc.input.value = eval(calc.input.value);
+		}
+		function deleteChar(input) {
+			calc.input.value = calc.input.value.substring(0, calc.input.value.length - 1);
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<form name="calc">
+			<table border="6">
+				<tr><td>Calculator</td></tr>
+				<tr><td>
+					<input type="text" name="input" size="8"/><br/>
+				</td></tr>
+				<tr><td>
+					<input class="wide" type="button" name="back" value="←" onclick="deleteChar(this)">
+					<input class="wider" type="button" name="clear" value="C" onclick="calc.input.value=''">
+					<input class="wide" type="button" name="divide" value="÷" onclick="calc.input.value+='/'"><br/>
+					<input class="wide" type="button" name="seven" value="7" onclick="calc.input.value+='7'">
+					<input class="wide" type="button" name="eight" value="8" onclick="calc.input.value+='8'">
+					<input class="wide" type="button" name="nine" value="9" onclick="calc.input.value+='9'">
+					<input class="wide" type="button" name="multiply" value="x" onclick="calc.input.value+='*'"><br/>
+					<input class="wide" type="button" name="four" value="4" onclick="calc.input.value+='4'">
+					<input class="wide" type="button" name="five" value="5" onclick="calc.input.value+='5'">
+					<input class="wide" type="button" name="six" value="6" onclick="calc.input.value+='6'">
+					<input class="wide" type="button" name="minus" value="-" onclick="calc.input.value+='-'"><br/>
+					<input class="wide" type="button" name="one" value="1" onclick="calc.input.value+='1'">
+					<input class="wide" type="button" name="two" value="2" onclick="calc.input.value+='2'">
+					<input class="wide" type="button" name="three" value="3" onclick="calc.input.value+='3'">
+					<input class="wide" type="button" name="plus" value="+" onclick="calc.input.value+='+'"><br/>
+					<input class="wider" type="button" name="zero" value="0" onclick="calc.input.value+='0'">
+					<input class="wide" type="button" name="dot" value="." onclick="calc.input.value+='.'">
+					<input class="wide" type="button" name="equal" value="=" onclick="result()">
+				</td></tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>
