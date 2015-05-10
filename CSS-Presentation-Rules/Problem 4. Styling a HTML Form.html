@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Styling a HTML Form</title>
+	<link rel="stylesheet" type="text/css" href="Problem 4. Styling a HTML Form.css">
+</head>
+<body>
+<div class="outside">
+	<p>Step 1: Your details</p>
+	<form action="post">
+		<div class="inside">
+			<label for="name">Name</label>
+			<input class="right" id="name" placeholder=" First and last name">
+		</div>
+		<div class="inside">
+			<label for="email">Email</label>
+			<input class="right" id="email" placeholder=" example@domain.com">
+		</div>
+		<div class="inside">
+			<label for="phone">Phone</label>
+			<input class="right" id="phone" placeholder=" eg. +447500000000">
+		</div>
+	</form>
+	<p>Step 1: Delivery Address</p>
+	<form action="post">
+		<div class="inside">
+			<label for="address">Address</label>
+			<div class="textarea"><textarea id="address" cols="21" rows="5" autofocus></textarea></div>
+		</div>
+		<div class="inside">
+			<label for="post">Post Code</label>
+			<input class="right" id="post">
+		</div>
+		<div class="inside">
+			<label for="country">Country</label>
+			<input class="right" id="country">
+		</div>
+	</form>
+	<p>Step 1: Card Details</p>
+	<form action="post">
+		<div class="inside">
+			Card type</br></br>
+			<input type="radio" name="card" id="visa">
+			<img id="visaIMG">VISA
+			<input type="radio" name="card" id="amex">
+			<img id="amexIMG">AmEx
+			<input type="radio" name="card" id="master">
+			<img id="masterIMG">Mastercard
+		</div>
+		<div class="inside">
+			<label for="cardNumb">Card Number</label>
+			<input class="right" id="cardNumb">
+		</div>
+		<div class="inside">
+			<label for="secCode">Security Code</label>
+			<input class="right" id="secCude">
+		</div>
+		<div class="inside">
+			<label for="cardName">Name on card</label>
+			<input class="right" id="cardName" placeholder=" exact name as on the card">
+		</div>
+	</form>
+	<button>BUT IT!</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+	font-family: Verdana;
+}
+body > div {
+	width: 550px;
+	height: 200px;
+	border-left: 5px dashed red;
+	border-top: 5px dotted yellow;
+	border-right: 10px solid green;
+	border-bottom: 7px double blue;
+}
+h1 {
+	margin-top: 12px;
+	margin-bottom: 17px;
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 10px 10px 10px grey;
+}
+div > div {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	height: 80px;
+	text-align: center;
+	box-shadow: 
+		0 0 0 1px rgb(255, 69, 69),
+		0 0 0 2px red,
+		0 0 0 3px rgb(255, 152, 0),
+		0 0 0 4px yellow,
+		0 0 0 5px rgb(132, 197, 0),
+	    0 0 0 6px rgb(0, 134, 0),
+	    0 0 0 7px rgb(0, 88, 88),
+	    0 0 0 8px blue,
+	    0 0 0 9px rgb(60, 60, 225);
+    border-radius: 50px;
+}
+span {
+	font-size: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(218, 151, 30);
+	border: 5px ridge rgb(255, 181, 50);
+}
+p {
+	padding-top: 10px;
+	font-size: 16px;
+}

@@ -1,0 +1,68 @@
+body {
+	font-family: Verdana;
+}
+input.right {
+	float: right;
+	clear: both;
+	margin-right: 50px;
+}
+div.outside{
+	width: 400px;
+	height: 710px;
+	background-image: url(formBackground.jpg);
+	background-image: repeat;
+}
+div.inside {
+	width: 85%;
+	padding: 10px;
+	border: 1px solid black;
+	margin: 0 auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 1px solid white;
+	border-radius: 5px;
+	font-size: 12px;
+}
+p {
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+input, textarea {
+	border-radius: 3px;
+}
+div.textarea {
+	float: right;
+	margin-right: 50px;
+}
+form:nth-of-type(2) > div:nth-of-type(1) {
+	height: 100px;
+}
+#visaIMG {
+    width: 32px;
+    height: 22px;
+    background: url(cards.png) 0 0;
+}
+#amexIMG {
+    width: 32px;
+    height: 22px;
+    background: url(cards.png) -64px 0;
+}
+#masterIMG {
+    width: 32px;
+    height: 22px;
+    background: url(cards.png) -32px 0;
+}
+button {
+	width: 100px;
+	height: 30px;
+	background-color: darkblue;
+	border-radius: 20px;
+	color: white;
+	margin-top: 20px;
+	margin-left: 150px;
+}

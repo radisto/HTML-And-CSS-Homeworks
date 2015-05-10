@@ -1,0 +1,189 @@
+table {
+	    width: 100%;
+	    border-radius: 15px;
+	    background: white;
+	    font-family: "Tahoma";
+	    font-size: 14px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+th:first-child {
+	border-radius: 15px 0 0 0;
+}
+th:last-child {
+	border-radius: 0 15px 0 0;
+}
+tr:last-child > td:first-child {
+	border-radius: 0 0 0 15px;
+}
+tr:last-child > td:last-child {
+	border-radius: 0 0 15px 0;
+}
+div.innerDiv {
+    border: 1px solid black;
+    background: rgb(0, 151, 68);
+    padding: 10px;
+    width: 800px;
+}
+th {
+    background-color: rgb(242, 202, 20);
+    padding: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+th:nth-of-type(1), td:nth-of-type(1), th:nth-of-type(3), td:nth-of-type(3), td:nth-of-type(5), td:nth-of-type(6), td:nth-of-type(7) {
+	width: 15%;
+}
+th:nth-of-type(2), td:nth-of-type(2), th:nth-of-type(4), td:nth-of-type(4) {
+	width: 10%;
+}
+td:nth-of-type(8) {
+	width: 5%;
+}
+th:nth-of-type(5) {
+	width: 50%;
+}
+th:nth-of-type(1), td:nth-of-type(1), td:nth-of-type(5) {
+	text-align: right;
+	padding-right: 6px;
+}
+th:nth-of-type(3), td:nth-of-type(3), td:nth-of-type(7) {
+	text-align: left;
+	padding-left: 6px;
+}
+th:nth-of-type(2), td:nth-of-type(2), th:nth-of-type(4), td:nth-of-type(4), td:nth-of-type(6), td:nth-of-type(8), th:nth-of-type(5) {
+	text-align: center;
+}
+tr:nth-of-type(3) > *, tr:nth-of-type(5) > * {
+	background: rgb(203, 203, 203);
+}
+tr:nth-of-type(2) > td:nth-of-type(8) > div:nth-child(1),  tr:nth-of-type(3) > td:nth-of-type(8) > div:nth-child(1), tr:nth-of-type(4) > td:nth-of-type(8) > div:nth-child(1) {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	margin: 2px;
+	background: red;
+	position: relative;
+	border: 1px solid black;
+}
+tr:nth-of-type(5) > td:nth-of-type(8) > div:nth-child(1),  tr:nth-of-type(6) > td:nth-of-type(8) > div:nth-child(1) {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	margin: 2px;
+	background: green;
+	position: relative;
+	border: 1px solid black;
+}
+tr:nth-of-type(2) > td:nth-of-type(8) > div:nth-child(2) {
+	top: 67px;
+	left: 788px;
+	position: absolute;
+	color: white;
+	font-size: 10px;
+}
+tr:nth-of-type(3) > td:nth-of-type(8) > div:nth-child(2) {
+	top: 102px;
+	left: 788px;
+	position: absolute;
+	color: white;
+	font-size: 10px;
+}
+tr:nth-of-type(4) > td:nth-of-type(8) > div:nth-child(2) {
+	top: 137px;
+	left: 788px;
+	position: absolute;
+	color: white;
+	font-size: 10px;
+}
+tr:nth-of-type(5) > td:nth-of-type(8) > div:nth-child(2) {
+	top: 172px;
+	left: 788px;
+	position: absolute;
+	color: white;
+	font-size: 10px;
+}
+tr:nth-of-type(6) > td:nth-of-type(8) > div:nth-child(2) {
+	top: 207px;
+	left: 788px;
+	position: absolute;
+	color: white;
+	font-size: 10px;
+}
+tr:nth-of-type(2) > td:nth-of-type(6) > select,  tr:nth-of-type(3) > td:nth-of-type(6) > select, tr:nth-of-type(4) > td:nth-of-type(6) > select {
+	color: red;
+	background: rgb(222, 222, 222);
+}
+tr:nth-of-type(5) > td:nth-of-type(6) > select,  tr:nth-of-type(6) > td:nth-of-type(6) > select {
+	color: green;
+}
+span a:link, span a:visited {
+	display: block;
+	zoom: 0.2;
+	cursor: default;
+}
+span.brasil a:link, span.brasil a:visited {
+	float: right;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -960px -60px no-repeat;
+}
+span.mexico a:link, span.mexico a:visited {
+	float: left;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -1080px -420px no-repeat;
+}
+span.spain a:link, span.spain a:visited {
+	float: right;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -1440px -600px no-repeat;
+}
+span.holland a:link, span.holland a:visited {
+	float: left;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -600px -480px no-repeat;
+}
+span.italy a:link, span.italy a:visited {
+	float: right;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -960px -300px no-repeat;
+}
+span.england a:link, span.england a:visited {
+	float: left;
+	width: 120px;
+	height: 60px;
+	/*There isn't an England flag in the image*/
+	background: url("flags.png") -480px -720px no-repeat;
+}
+span.argentina a:link, span.argentina a:visited {
+	float: right;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -720px 0 no-repeat;
+}
+span.bosnia a:link, span.bosnia a:visited {
+	float: left;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -720px -60px no-repeat;
+}
+span.germany a:link, span.germany a:visited {
+	float: right;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -600px -240px no-repeat;
+}
+span.portugal a:link, span.portugal a:visited {
+	float: left;
+	width: 120px;
+	height: 60px;
+	background: url("flags.png") -600px -540px no-repeat;
+}

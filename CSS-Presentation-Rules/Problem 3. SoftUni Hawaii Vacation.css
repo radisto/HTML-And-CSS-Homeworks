@@ -1,0 +1,44 @@
+@font-face {
+	font-family: Animated;
+	src: url(Animated.ttf);
+}
+div.outside {
+	width: 900px;
+	height: 600px;
+	background-color: skyblue;
+	background-image:
+		url(VladoKHula.png),
+		url(AlexHula.png),
+		url(NakovHula.png),
+		url(TediHula.png),
+		url(PetiaHula.png),
+		url(VladoGHula.png),
+		url(HawaiiBackground.png);
+	background-position:
+		98% 90%,
+		75% 85%,
+		60% 75%,
+		35% 95%,
+		28% 85%,
+		7% 90%,
+		left top;
+	background-repeat: no-repeat;
+}
+div.inside {
+    background: rgba(255, 255, 255, 0.1);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+span {
+	font-family: Animated;
+	color: gold;
+	font-size: 50px;
+	display: inline;
+	position: absolute;
+	margin-left: 220px;
+	margin-top: 10px;
+}
